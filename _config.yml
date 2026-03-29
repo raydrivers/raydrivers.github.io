@@ -1,0 +1,10 @@
+permalink: /blog/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - dev

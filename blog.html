@@ -1,0 +1,70 @@
+---
+permalink: /blog.html
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>blog - Dmitry Vasyliev</title>
+        <link rel="icon" href="favicon.svg"
+              type="image/svg+xml">
+        <link rel="preconnect"
+              href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/blog.css">
+    </head>
+    <body>
+        <div class="placeholder blog-page">
+            <div class="blog-cmd">
+                <p class="placeholder-text">
+                <span class="accent">$</span> cat README.md
+                </p>
+                <p class="placeholder-text dim">
+                I write about programming and
+                problem-solving.<br>
+                All the interesting stuff I come across
+                goes here.<br>
+                Writing about it helps me learn.<br>
+                Maybe you will find something useful
+                along the way.
+                </p>
+                <p class="placeholder-text dim">
+                If you have thoughts on something or think
+                I got it wrong,
+                <a href="/" class="placeholder-link">reach out</a>.
+                </p>
+            </div>
+
+            <div class="blog-cmd">
+                <p class="placeholder-text">
+                <span class="accent">$</span> ls -t ~/blog/
+                </p>
+                {% if site.posts.size > 0 %}
+                <div class="blog-list">
+                    {% for post in site.posts %}
+                    <div class="blog-list-item">
+                        <span class="blog-list-date">
+                            {{ post.date | date: "%Y-%m-%d" }}
+                        </span>
+                        <a href="{{ post.url }}"
+                           class="blog-list-link">
+                            {{ post.title }}
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="placeholder-text dim">
+                total 0
+                </p>
+                {% endif %}
+            </div>
+
+            <a href="/" class="placeholder-link">cd ~</a>
+        </div>
+    </body>
+</html>

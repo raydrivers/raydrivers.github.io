@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+              content="Dmitry Vasyliev (raydrivers) - systems programmer.
+                       Low-level software, real-time systems,
+                       native applications. C, C++, Rust, Zig.">
+        <meta name="author" content="Dmitry Vasyliev (raydrivers)">
+        <meta name="keywords"
+              content="raydrivers, Dmitry Vasyliev, systems programming,
+                       low-level, real-time, native applications,
+                       C, C++, Rust, Zig, software engineer">
+
+        <meta property="og:title"
+              content="raydrivers - Dmitry Vasyliev - Systems Programmer">
+        <meta property="og:description"
+              content="Low-level software design and engineering.
+                       Real-time systems. Native applications.">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title"
+              content="raydrivers - Dmitry Vasyliev - Systems Programmer">
+        <meta name="twitter:description"
+              content="Low-level software design and engineering.
+                       Real-time systems. Native applications.">
+
+        <title>raydrivers - whoami</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="page">
+            <div class="card-column">
+                <div class="card">
+                    <div class="card-top">
+                        <span class="status">Let's talk</span>
+                        <span class="email-row">
+                            <span class="email-addr">raydrivers@pm.me</span>
+                            <button class="copy-btn"
+                                    onclick="navigator.clipboard.writeText(
+                                        'raydrivers@pm.me'
+                                    ).then(()=>{
+                                        this.classList.add('copied');
+                                        setTimeout(()=>this.classList.remove(
+                                            'copied'
+                                        ),1500)
+                                    })">copy</button>
+                        </span>
+                    </div>
+
+                    <h1 class="name">Dmitry Vasyliev</h1>
+                    <p class="role">Software Engineer</p>
+
+                    <blockquote class="motto">
+                        <p><strong>You bring the problem.</strong></p>
+                        <p><span class="typed">I solve it.</span></p>
+                    </blockquote>
+
+                    <nav class="links">
+                        <a href="https://github.com/raydrivers" target="_blank" rel="noopener">
+                            <svg><use href="icons/icons.svg#github"/></svg>
+                            github
+                        </a>
+                        <a href="https://linkedin.com/in/raydrivers" target="_blank" rel="noopener">
+                            <svg><use href="icons/icons.svg#linkedin"/></svg>
+                            linkedin
+                        </a>
+                        <a href="https://t.me/raydrivers" target="_blank" rel="noopener">
+                            <svg><use href="icons/icons.svg#telegram"/></svg>
+                            telegram
+                        </a>
+                    </nav>
+                </div>
+
+                <nav class="subnav">
+                    <a href="blog.html">blog</a>
+                    <a href="projects.html">projects</a>
+                </nav>
+            </div>
+
+            <div class="details">
+                <p class="details-intro">
+                I want to <span class="accent">find a hard problem</span><br>
+                and turn it into a product.<br>
+                Tools, libraries, software.<br>
+                Want to <span class="accent">build together</span>?<br>
+                <span class="accent">Reach out!</span>
+                </p>
+
+                <span class="section-label">I chase</span>
+
+                <div class="domain">
+                    <h2 class="domain-title">Systems Programming</h2>
+                    <p class="domain-desc">
+                    <span class="highlight">Low-level</span> software.<br>
+                    Close to metal and high performance.<br>
+                    </p>
+                </div>
+
+                <div class="domain">
+                    <h2 class="domain-title">Real-Time Systems</h2>
+                    <p class="domain-desc">
+                    <span class="highlight">Streaming, audio, video, graphics.</span><br>
+                    From capture to render.
+                    </p>
+                </div>
+
+                <div class="domain">
+                    <h2 class="domain-title">Native Applications</h2>
+                    <p class="domain-desc">
+                    <span class="highlight">Desktop <u>and</u> mobile.</span><br>
+                    Software as a binary.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
